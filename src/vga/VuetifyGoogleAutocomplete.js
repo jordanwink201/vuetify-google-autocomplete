@@ -769,6 +769,8 @@ export default {
         };
       }
 
+      debugger;
+
       this.autocomplete = new window.google.maps.places.Autocomplete(
         document.getElementById(this.id),
         options,
@@ -813,6 +815,10 @@ export default {
           returnData.name = place.name;
           returnData.photos = place.photos;
           returnData.place_id = place.place_id;
+
+          debugger;
+
+          console.log('TESTING return data name : ', returnData.name);
 
           // return returnData object and PlaceResult object
           this.$emit('placechanged', returnData, place, this.id);
