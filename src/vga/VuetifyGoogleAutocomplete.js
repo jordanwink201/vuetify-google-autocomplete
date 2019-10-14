@@ -771,6 +771,8 @@ export default {
 
       debugger;
 
+      console.log('SETUP GOOGLE')
+
       this.autocomplete = new window.google.maps.places.Autocomplete(
         document.getElementById(this.id),
         options,
